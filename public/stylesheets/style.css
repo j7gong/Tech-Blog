@@ -23,13 +23,17 @@ body, html {
 
 a {
   text-decoration: none;
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
   color: var(--green);
+}
+
+.border-dark {
+    border: 2px solid var(--primary-color);
 }
 
 button {
@@ -50,6 +54,30 @@ button:hover {
 .post-list {
   margin: 0;
   padding: 0;
+}
+
+.text-large {
+    font-size: 24px;
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+.text-green {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--primary-color);
+}
+
+.bg-dark {
+    background-color: var(--primary-color);
+}
+
+.bg-green {
+    background-color: var(--secondary-color);
 }
 
 textarea, input {
@@ -109,7 +137,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: var(--blue);
+  color: var(--secondary-color);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;

@@ -11,26 +11,23 @@
 
 <body>
   <div>
-    <header class="flex-column align-items-start p-4">
+    <header class="flex-column align-items-start p-5">
 
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <a href="/dashboard" class="text-green">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
-      <h1 class="my-2">
-        <a href="/" class="">The Tech Blog</a>
-      </h1>
+      <div class="my-2 mt-5">
+        <a href="/" class="text-dark bg-green text-large p-3">The Tech Blog</a>
+      </div>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
   </div>
   
   {{#if loggedIn}}
